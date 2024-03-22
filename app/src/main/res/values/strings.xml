@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AjaApp</string>
+    <string name="title_activity_layout">LayoutActivity</string>
+    <string name="title_activity_intent">IntentActivity</string>
 </resources>
