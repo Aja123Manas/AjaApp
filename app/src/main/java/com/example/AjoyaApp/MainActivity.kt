@@ -1,4 +1,4 @@
-package com.example.ajaapp
+package com.example.AjoyaApp
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,7 +8,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -19,10 +18,9 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Divider
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -38,15 +36,17 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.ajaapp.ui.theme.AjaAppTheme
+import com.airbnb.lottie.compose.LottieAnimation
+import com.airbnb.lottie.compose.LottieCompositionSpec
+import com.airbnb.lottie.compose.animateLottieCompositionAsState
+import com.airbnb.lottie.compose.rememberLottieComposition
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             Demo()
-
-
 
 
 
@@ -74,6 +74,12 @@ fun Demo(){
          textDecoration = TextDecoration.Underline
      )
      Text(text = "Android software development is the process by which applications are created for devices running the Android operating system. Google states that \"Android ...\n" + "\u200EOfficial development tools ·")
+     //Lottie Animation
+     val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.contact))
+     val progress by animateLottieCompositionAsState(composition)
+     LottieAnimation(composition, progress,
+         modifier = Modifier.size(300.dp)
+     )
      Text(
          text = "Types of Cars",
          fontSize = 20.sp,
@@ -104,7 +110,9 @@ fun Demo(){
              Text(text = "2.Smart Watches")
 
              Button(
-                 onClick = { /*TODO*/ },
+                 onClick = { mContext.startActivity(Intent(mContext,LayoutActivity::class.java))
+
+                 },
                  shape = RoundedCornerShape(5.dp),
                  colors = ButtonDefaults.buttonColors(Color.Cyan),
                  modifier = Modifier
@@ -113,7 +121,7 @@ fun Demo(){
              )
 
              {
-                 Text(text = "More Devices")
+                 Text(text = "Destination")
 
              }
              Divider()
@@ -142,7 +150,6 @@ fun Demo(){
              }
 
              Button(onClick = {
-                              mContext.startActivity(Intent(mContext,LayoutActivity::class.java))
              },
                  shape = RoundedCornerShape(5.dp),
                  colors = ButtonDefaults.buttonColors(Color.Cyan),

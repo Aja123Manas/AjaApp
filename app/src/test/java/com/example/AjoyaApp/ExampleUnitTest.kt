@@ -1,4 +1,4 @@
-package com.example.ajaapp
+package com.example.firebasestorage
 
 import org.junit.Test
 

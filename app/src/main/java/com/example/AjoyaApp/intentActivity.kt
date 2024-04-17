@@ -1,4 +1,4 @@
-package com.example.ajaapp
+package com.example.AjoyaApp
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -17,14 +18,11 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Place
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
@@ -35,10 +33,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.core.net.toUri
-import com.example.ajaapp.ui.theme.AjaAppTheme
 
 class IntentActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -242,6 +243,24 @@ fun MyIntents(){
 
         }
         Spacer(modifier = Modifier.height(20.dp))
+
+
+
+
+        Text(
+            text = "Do not have an account? Register",
+            fontSize = 40.sp,
+            fontFamily = FontFamily.Cursive,
+            modifier = Modifier
+                .fillMaxWidth()
+                .clickable {
+                    mContext.startActivity(Intent(mContext,FormActivity::class.java))
+                },
+            textAlign = TextAlign.Center,
+            fontWeight = FontWeight.Bold)
+
+
+
 
 
 

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.ajaapp"
+    namespace = "com.example.AjoyaApp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.ajaapp"
+        applicationId = "com.example.AjoyaApp"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -59,6 +59,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.firebase.firestore.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -66,4 +67,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //Lottie Dependency
+    implementation("com.airbnb.android:lottie-compose:4.2.0")
 }

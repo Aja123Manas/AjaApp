@@ -1,5 +1,20 @@
 <resources>
-    <string name="app_name">AjaApp</string>
+    <string name="app_name">AjoyaApp</string>
     <string name="title_activity_layout">LayoutActivity</string>
     <string name="title_activity_intent">IntentActivity</string>
+    <string name="title_activity_form">FormActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_explore">ExploreActivity</string>
+    <string name="title_activity_assignment">Assignment</string>
+    <string name="title_activity_lottie">LottieActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_1">Activity1</string>
+    <string name="title_activity_2">Activity2</string>
+    <string name="title_activity_3">Activity3</string>
+    <string name="title_activity_mai4">MaiActivity4</string>
+    <string name="title_activity_4">Activity4</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_insert">InsertActivity</string>
+    <string name="title_activity_details">DetailsActivity</string>
 </resources>

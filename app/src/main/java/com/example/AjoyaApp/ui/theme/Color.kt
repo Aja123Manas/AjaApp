@@ -1,4 +1,4 @@
-package com.example.ajaapp.ui.theme
+package com.example.firebasestorage.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,4 +1,4 @@
-package com.example.ajaapp
+package com.example.AjoyaApp
 
 import android.content.Intent
 import android.os.Bundle
@@ -22,8 +22,6 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
@@ -38,7 +36,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.ajaapp.ui.theme.AjaAppTheme
+
 
 class LayoutActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

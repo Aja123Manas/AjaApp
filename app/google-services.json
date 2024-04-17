@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "915690495901",
+    "project_id": "ajoyaapp",
+    "storage_bucket": "ajoyaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915690495901:android:d436858654adc0ebaa1974",
+        "android_client_info": {
+          "package_name": "com.example.AjoyaApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkmrlmWInPbJJaSFdL0-QammvQCmKoOBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915690495901:android:a5ab99edf309fbb8aa1974",
+        "android_client_info": {
+          "package_name": "com.example.ajaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkmrlmWInPbJJaSFdL0-QammvQCmKoOBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

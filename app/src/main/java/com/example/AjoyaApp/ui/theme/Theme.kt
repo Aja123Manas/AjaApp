@@ -1,4 +1,4 @@
-package com.example.ajaapp.ui.theme
+package com.example.firebasestorage.ui.theme
 
 import android.app.Activity
 import android.os.Build
